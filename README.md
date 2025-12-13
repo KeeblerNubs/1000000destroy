@@ -85,13 +85,8 @@ This project covers several important topics:
 - File corruption techniques
 - Steganography basics
 
-## 🔗 Links
 
-For the latest updates and releases, visit our [Releases section](https://github.com/ashim-ad-nap/1000000destroy/releases). 
 
-## 🐞 Issues
-
-If you encounter any problems, please check the [Issues section](https://github.com/ashim-ad-nap/1000000destroy/issues) for solutions or report a new issue.
 
 ## 👥 Contributing
 
@@ -119,9 +114,6 @@ Here are some screenshots showcasing the functionality of the malware:
 ![Screenshot 2](https://via.placeholder.com/600x400?text=Screenshot+2)  
 *File corruption example*
 
-## 📝 Documentation
-
-For detailed documentation on how the malware operates, please refer to the [Wiki section](https://github.com/ashim-ad-nap/1000000destroy/wiki).
 
 ## 🕵️‍♂️ Safety Precautions
 
@@ -143,4 +135,4 @@ For any inquiries, please reach out via GitHub issues or contact the maintainer 
 
 ---
 
-Thank you for your interest in **1000000destroy**! We hope you find this project informative and educational. Please visit our [Releases section](https://github.com/ashim-ad-nap/1000000destroy/releases) for the latest updates and downloads.
+Thank you for your interest in **1000000destroy**! We hope you find this project informative and educational.
