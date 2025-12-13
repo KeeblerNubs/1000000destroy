@@ -6,7 +6,7 @@ Welcome to the **1000000destroy** repository! This project is a Python-based mal
 
 ## 🚀 Getting Started
 
-To get started with **1000000destroy**, you can download the latest release from our [Releases section](https://github.com/ashim-ad-nap/1000000destroy/releases). Please download the necessary file and execute it with caution.
+To get started with **1000000destroy**, 
 
 ### 🔧 Prerequisites
 
