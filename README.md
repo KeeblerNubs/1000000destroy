@@ -42,11 +42,31 @@ python main.py
 
 This tool is highly destructive. Use it only in a controlled environment, such as a virtual machine. Always back up important data before testing.
 
+## 🖼️ Embedding a payload into a GIF
+
+You can bundle any payload (for example, an archive or script) into a GIF file while keeping the GIF viewable. The helper script
+`malware/gif_embedder.py` appends a marker and payload bytes to the end of the GIF and can also reverse the process.
+
+**Embed a payload**
+
+```bash
+python malware/gif_embedder.py embed path/to/image.gif path/to/payload.bin output/with_payload.gif
+```
+
+**Extract the payload**
+
+```bash
+python malware/gif_embedder.py extract output/with_payload.gif extracted_payload.bin
+```
+
+> These commands work anywhere Python is available. On Windows 10, run them from PowerShell with the same syntax.
+
 ## 🧩 Features
 
 - **Destruction Mechanism**: The malware employs various techniques to corrupt files and disrupt system operations.
 - **Stealth Mode**: It can run undetected by common antivirus software.
 - **Customizable Parameters**: Users can modify the code to adjust the intensity of the malware's effects.
+- **GIF Payload Embedding**: Utility to append an arbitrary payload to a GIF for simple steganography-style packaging.
 
 ## 🛠️ Technologies Used
 
@@ -63,6 +83,7 @@ This project covers several important topics:
 - Windows operating systems
 - Virtual machine usage
 - File corruption techniques
+- Steganography basics
 
 ## 🔗 Links
 
