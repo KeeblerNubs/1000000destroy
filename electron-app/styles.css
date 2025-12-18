@@ -1,0 +1,123 @@
+:root {
+  --bg: #0f1115;
+  --panel: #1c2027;
+  --accent: #7c5cff;
+  --text: #f2f4f8;
+  --muted: #a6acb8;
+  --error: #ff6b6b;
+  --success: #35c26b;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at 20% 20%, #171a21, #0f1115 60%);
+  color: var(--text);
+  margin: 0;
+  padding: 24px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p {
+  color: var(--muted);
+  margin: 0 0 24px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #222834;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.form-row {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+}
+
+input[type='text'] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #2d3442;
+  background: #0d0f14;
+  color: var(--text);
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2b3140;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #3a4254;
+}
+
+button.primary {
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent), #3fa9f5);
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+button.primary:hover {
+  background: linear-gradient(135deg, #9b7dff, #62b8ff);
+}
+
+.status {
+  min-height: 22px;
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.status.success {
+  color: var(--success);
+}
+
+.status.error {
+  color: var(--error);
+}
+
+footer {
+  margin-top: 28px;
+  color: var(--muted);
+}
+
+code {
+  background: #0d0f14;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid #2d3442;
+}

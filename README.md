@@ -47,6 +47,23 @@ This tool is highly destructive. Use it only in a controlled environment, such a
 You can bundle any payload (for example, an archive or script) into a GIF file while keeping the GIF viewable. The helper script
 `malware/gif_embedder.py` appends a marker and payload bytes to the end of the GIF and can also reverse the process.
 
+### Windows-friendly GUI (Electron)
+
+A desktop helper app lives in `electron-app/` to make embedding and extracting simpler on Windows 10 (or any platform with Node.js and Electron).
+
+1. Install dependencies from PowerShell (runs the same on WSL2/macOS/Linux):
+   ```powershell
+   cd electron-app
+   npm install
+   ```
+2. Start the app:
+   ```powershell
+   npm start
+   ```
+3. Use the UI to pick a GIF, pick a payload, and choose where to save the output file. The **Extract** tab saves any embedded payload back out.
+
+> Electron packages are large; if Windows SmartScreen prompts on first launch, select **More info** → **Run anyway** to continue.
+
 **Embed a payload**
 
 ```bash

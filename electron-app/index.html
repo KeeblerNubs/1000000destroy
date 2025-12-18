@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIF Payload Embedder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GIF Payload Embedder</h1>
+      <p>
+        Add or extract embedded payloads from GIF images without touching the
+        visible frames.
+      </p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Embed payload</h2>
+        <div class="form-row">
+          <label>GIF file</label>
+          <div class="input-row">
+            <input id="embed-gif" type="text" readonly placeholder="Choose a GIF" />
+            <button id="browse-embed-gif">Browse</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Payload file</label>
+          <div class="input-row">
+            <input
+              id="embed-payload"
+              type="text"
+              readonly
+              placeholder="Choose a payload (zip, exe, script, etc.)"
+            />
+            <button id="browse-embed-payload">Browse</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Output GIF</label>
+          <div class="input-row">
+            <input id="embed-output" type="text" readonly placeholder="Save as..." />
+            <button id="browse-embed-output">Save As</button>
+          </div>
+        </div>
+        <button class="primary" id="run-embed">Embed Payload</button>
+        <p class="status" id="embed-status"></p>
+      </section>
+
+      <section class="card">
+        <h2>Extract payload</h2>
+        <div class="form-row">
+          <label>GIF with payload</label>
+          <div class="input-row">
+            <input id="extract-gif" type="text" readonly placeholder="Choose a GIF" />
+            <button id="browse-extract-gif">Browse</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <label>Output payload file</label>
+          <div class="input-row">
+            <input id="extract-output" type="text" readonly placeholder="Save payload as..." />
+            <button id="browse-extract-output">Save As</button>
+          </div>
+        </div>
+        <button class="primary" id="run-extract">Extract Payload</button>
+        <p class="status" id="extract-status"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Uses the same marker format as <code>malware/gif_embedder.py</code> for
+        compatibility with CLI workflows.
+      </p>
+    </footer>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

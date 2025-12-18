@@ -1,0 +1,14 @@
+{
+  "name": "gif-payload-embedder",
+  "version": "1.0.0",
+  "description": "Electron UI for embedding and extracting payloads from GIF files.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.0"
+  }
+}
